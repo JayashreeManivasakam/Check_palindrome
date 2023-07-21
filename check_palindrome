@@ -1,0 +1,16 @@
+s=input()
+start=0
+end=len(s)-1
+def pal(s,start,end):
+    if start>end:
+        return True
+    if s[start]!=s[end]:
+        return False
+    return pal(s,start+1,end-1)
+if s==' ':
+     print ('0')
+else:
+    if pal(s,start,end)==True:
+        print('1')
+    if pal(s,start,end)==False:
+        print('0')
